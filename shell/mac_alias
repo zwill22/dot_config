@@ -1,0 +1,7 @@
+alias \
+\
+l="ls -lh --color=auto" \
+ls="ls -h --color=auto" \
+la="ls -lah --color=auto" \
+rm="trash"
+

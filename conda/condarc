@@ -1,0 +1,16 @@
+channels:
+  - conda-forge
+
+auto_update_conda: true
+
+envs_dirs:
+  - /opt/anaconda/envs
+
+pkgs_dirs:
+  - /opt/anaconda/pkgs
+
+installer_type: miniforge
+
+anaconda_anon_usage: false
+add_anaconda_token: false
+

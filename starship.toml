@@ -1,0 +1,100 @@
+# Get editor completions based on the config schema
+"$schema" = "https://starship.rs/config-schema.json"
+
+format = "$character$hostname$username$directory$git_branch$git_status "
+right_format = "$all"
+scan_timeout = 60
+command_timeout = 2000
+add_newline = false
+
+[aws]
+disabled = true
+
+#[battery]
+#full_symbol = "• "
+#charging_symbol = "⬆️ "
+#discharging_symbol = "⬇️ "
+#unknown_symbol = "❓ "
+#empty_symbol = "❗ "
+
+[c]
+disabled = true
+format = "[ $symbol($version(-$name) )]($style)"
+
+[cmake]
+#symbol = "CMake "
+format = "[$symbol($version )]($style)"
+
+[conda]
+format = "[ $symbol$environment ]($style)"
+ignore_base = false
+truncation_length = 0
+
+[cpp]
+disabled = true
+format = "[ $symbol($version(-$name) )]($style)"
+
+[directory]
+truncation_length = 80
+style = "fg:#eceff4 bg:#4c566a"
+read_only = "🔒 "
+read_only_style = "bg:#4c566a"
+format = "[ $path [$read_only]($read_only_style)]($style)"
+
+[docker_context]
+format = "[ $symbol$context ]($style)"
+
+#[dotnet]
+#format = "[ $symbol($version )(🎯 $tfm )]($style)"
+
+#[erlang]
+#symbol = "ⓔ "
+
+[git_branch]
+format = "[ $symbol$branch(:$remote_branch) ]($style)"
+style = "fg:purple bg:cyan"
+
+[git_status]
+format = "( [$all_status$ahead_behind]($style))"
+
+#[golang]
+#format = "[ $symbol($version )]($style)"
+#symbol = "G "
+
+[hostname]
+ssh_only = true
+style = "fg:#e5e9f0 bg:#2e3440"
+format = "[ $ssh_symbol$hostname ]($style)"
+
+[lua]
+format = '[$symbol($version )]($style)'
+
+[nodejs]
+#symbol = "[⬢](bold green) "
+format = "[$symbol($version )]($style)"
+
+[package]
+format = "[ $symbol$version ]($style)"
+
+[python]
+format = "[ ${symbol}${pyenv_prefix}(${version} )(\\($virtualenv\\) )]($style)"
+
+#[pulumi]
+#symbol = "🧊 "
+
+[rust]
+format = "[ $symbol($version )]($style)"
+
+[swift]
+format = "[ $symbol($version )]($style)"
+
+#[typst]
+#symbol = "t "
+
+[username]
+show_always = true
+style_root = 'bold red bg:#2e3440'
+style_user = 'fg:#eceff4 bg:#3b4252'
+format = "[ $user ]($style)"
+disabled = false
+

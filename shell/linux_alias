@@ -1,0 +1,7 @@
+alias \
+\
+l="ls -lh --color=auto --group-directories-first" \
+ls="ls -h --color=auto --group-directories-first" \
+la="ls -lah --color=auto --group-directories-first" \
+rm="rm -Iv" \
+

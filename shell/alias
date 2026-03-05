@@ -1,0 +1,30 @@
+alias \
+\
+2m="for f in *(png|jpg)(LM+2); do mogrify -scale 97% $f; done" \
+c="clear" \
+v="nvim" \
+vi="nvim" \
+f="fff" \
+cat="bat" \
+l="ls -lh --color=auto" \
+ls="ls -h --color=auto" \
+la="ls -lah --color=auto" \
+grep="grep --color=auto" \
+shell="exec $SHELL -l" \
+fk="sudo !!" \
+mv="mv -i" \
+df="df -h" \
+du="du -h -d 1" \
+k="killall" \
+p="ps aux | grep $1" \
+man="batman" \
+wget="wget --hsts-file=$XDG_STATE_HOME/wget-hsts"
+lsbc="lsblk | bat -l conf -p" \
+freec="free -h | bat -l cpuinfo -p" \
+sensors="sensors | bat -l cpuinfo -p" \
+exiftool="/usr/bin/vendor_perl/exiftool" \
+bathelp='bat --plain --language=help'
+help() {
+    "$@" --help 2>&1 | bathelp
+}
+

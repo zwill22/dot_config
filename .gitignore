@@ -1,0 +1,11 @@
+.old/
+.old.nvim/
+
+deezer-desktop
+jgit
+gh/hosts.yml
+zsh/.zcompdump*
+zsh/.zsh_sessions/
+conda/environments.yml
+
+
